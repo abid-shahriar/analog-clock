@@ -19,10 +19,9 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
-  overflow-x: hidden;
-  position: relative;
+  overflow: hidden;
 }
 
 .color-content {
