@@ -12,8 +12,27 @@ html {
 }
 
 body {
-  background-color: #141279;
+  width: 100vw;
+  background-color: #413eca;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.color-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,6 +42,46 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.color-content h3 {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.color-content .color-btn {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.781);
+          box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.781);
+  font-size: 2rem;
+  font-weight: 100;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.color-content .color-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.color-content .color-btn:active {
+  -webkit-transform: translateY(0.1rem);
+          transform: translateY(0.1rem);
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.781);
+          box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.781);
 }
 
 .clock {
@@ -112,5 +171,17 @@ body {
   width: 0.3rem;
   background-color: red;
   z-index: 3;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  html {
+    font-size: 40%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
