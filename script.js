@@ -48,10 +48,10 @@ btn.addEventListener("click", randomColorGenerator);
 function randomColorGenerator() {
   let randomColor = "#";
   for (let i = 0; i < 6; i++) {
-    randomColor += hex[blah()];
+    randomColor += hex[indexNumber()];
   }
   color.innerHTML = randomColor;
   document.body.style.backgroundColor = randomColor;
 }
 
-let blah = () => Math.floor(Math.random() * hex.length);
+let indexNumber = () => Math.floor(Math.random() * hex.length);
